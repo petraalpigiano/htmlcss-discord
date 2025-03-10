@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 /* REGOLE UTILITY */
 .container {
@@ -21,28 +28,39 @@
 /* REGOLE HEADER */
 
 header {
-  background-color: #add8e7;
+  background-color: #265ee9;
 }
 .top-header {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
 }
 .top-header > .container {
   display: flex;
-}
-.top-header div {
-  align-content: center;
-  flex-grow: 1;
-  border: 2px dashed black;
   padding: 7px;
-  background-color: #daa51e;
+  background-color: #265ee9;
 }
-.top-header div:nth-child(2) {
-  flex-grow: 2;
-  text-align: center;
+.header-list {
+  display: flex;
 }
-.top-header div:last-child {
-  text-align: end;
+.container > .header-list {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.header-list li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container > .small-button {
+  background-color: white;
+  border-radius: 20px;
+  border: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .bottom-header {
   background-color: #00018b;
