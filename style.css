@@ -27,6 +27,7 @@
 
 /* REGOLE HEADER */
 
+/* TOP HEADER */
 header {
   background-color: #265ee9;
 }
@@ -53,7 +54,8 @@ header {
   padding-right: 20px;
 }
 
-.container > .small-button {
+.container > .small-button,
+.big-button {
   background-color: white;
   border-radius: 20px;
   border: white;
@@ -62,20 +64,36 @@ header {
   padding-left: 12px;
   padding-right: 12px;
 }
+
+/* BOTTOM HEADER */
 .bottom-header {
   background-color: #00018b;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-image: url(./img/jumbo.png);
 }
 .bottom-header > .container {
   display: flex;
   max-width: 800px;
   height: 300px;
   margin: 0 auto;
-  background-color: #ef82ed;
-  border: 2px dashed black;
-  border-radius: 2px;
+  flex-direction: column;
 }
+.title {
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+}
+.paragraph {
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+}
+.big-button:last-child {
+  background-color: #23272a;
+  color: white;
+}
+
 /* REGOLE MAIN */
 .main > div {
   padding-top: 40px;
