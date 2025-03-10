@@ -1,0 +1,145 @@
+/* REGOLE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* REGOLE UTILITY */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* PER VEDERE I CONTAINER 
+.debug * {
+  min-height: 50px;
+  padding: 5px;
+  background-color: rgba(255, 0, 0, 0.236);
+  border: 2px dashed red;
+} */
+
+/* REGOLE HEADER */
+
+header {
+  background-color: #add8e7;
+}
+.top-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.top-header > .container {
+  display: flex;
+}
+.top-header div {
+  align-content: center;
+  flex-grow: 1;
+  border: 2px dashed black;
+  padding: 7px;
+  background-color: #daa51e;
+}
+.top-header div:nth-child(2) {
+  flex-grow: 2;
+  text-align: center;
+}
+.top-header div:last-child {
+  text-align: end;
+}
+.bottom-header {
+  background-color: #00018b;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bottom-header > .container {
+  display: flex;
+  max-width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #ef82ed;
+  border: 2px dashed black;
+  border-radius: 2px;
+}
+/* REGOLE MAIN */
+.main > div {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main :nth-of-type(even) {
+  background-color: #d3d3d3;
+}
+.main1 > .container,
+.main2 > .container {
+  display: flex;
+  height: 350px;
+}
+.main1 :first-child {
+  flex-grow: 2;
+  background-color: #1d90ff;
+  border: 2px dashed black;
+}
+.main1 :last-child {
+  flex-grow: 1;
+  background-color: #ffc1ca;
+  border: 2px dashed black;
+}
+.main2 > .container {
+  flex-direction: row-reverse;
+}
+.main2 :first-child {
+  flex-grow: 2;
+  background-color: #1d90ff;
+  border: 2px dashed black;
+}
+.main2 :last-child {
+  flex-grow: 1;
+  background-color: #ffc1ca;
+  border: 2px dashed black;
+}
+.main3 > .container {
+  display: flex;
+  height: 600px;
+}
+.main3 div {
+  background-color: #208b21;
+  flex-grow: 1;
+  border: 2px dashed black;
+}
+/* REGOLE FOOTER */
+.footer {
+  background-color: #23272a;
+}
+.top-footer {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e8eb;
+}
+.bottom-footer {
+  padding-top: 20px;
+}
+.top-footer > .container {
+  display: flex;
+  height: 400px;
+}
+.top-footer div {
+  flex-grow: 1;
+  background-color: #22b3aa;
+  border: 2px dashed white;
+  border-radius: 2px;
+}
+.top-footer :first-child {
+  flex-grow: 2;
+  background-color: #f08180;
+  border: 2px dashed black;
+}
+.bottom-footer > .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7fffd4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bottom-footer div {
+  align-content: center;
+  background-color: #feb6bf;
+  border: 2px dashed black;
+  padding: 3px;
+}
